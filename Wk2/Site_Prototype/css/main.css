@@ -481,6 +481,10 @@ margin-left: 20px;
 	margin-right: 10px;
 }
 
+.bjqs li {
+ list-style:none; 
+ }
+
 /** Overrides of specific styles */
 
 .left {
