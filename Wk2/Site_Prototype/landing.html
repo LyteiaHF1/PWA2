@@ -3,9 +3,139 @@
 
 	<head>
 		<title>Checklist Time Management</title>
+		
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link type="text/css" rel="stylesheet" href="css/rhinoslider-1.05.css" /> <!--This is the css for the slider-->
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#slider').rhinoslider();
+			});
+		</script>
+		<style type="text/css">
+			body { background-color:#000; }
+			
+			#slider {
+				width:600px;
+				height:250px;
+				
+				/*IE bugfix*/
+				padding:0;
+				margin:0;
+			}
+			
+			#slider li { list-style:none; }
+			
+			#page {
+				width:600px;
+				margin:50px auto;
+			}
+		</style>
+
 	</head>
 	
 	<body>
+		<header>
+
+			<div class="header-home">
+				<div class="header-icon"></div>
+				<img src="images/logo_small.png" />
+			</div>
+
+			<div class="header-login">
+				<input type="text" id="login_username" placeholder="Username" />
+				<input type="password" id="login_password" placeholder="Password" />
+				<button id="login_submit">Log In</button>
+			</div>
+		</header>
+		<div id="main">
+
+			<div class="home-hero">
+				<div class="content-spacer"></div>
+				<p class="home-hero-title">
+					With Checklist You Will Never Forget Again!
+				</p>
+				<div id="page">
+			<ul id="slider">
+				<li><img src="images/01.jpg" alt="" /></li>
+				<li><img src="images/02.jpg" alt="" /></li>
+				<li><img src="images/03.jpg" alt="" /></li>
+				<li><img src="images/04.jpg" alt="" /></li>
+				<li><img src="images/05.jpg" alt="" /></li>
+			</ul>
+		</div>
+				<div class="home-hero-preview"></div>
+			</div>
+
+			<div class="status active"></div>
+			
+			
+			 <div class="center-parent">
+			</div> 
+			
+			<div class="home-feature">
+				<img src="images/1.png" />
+				<p>
+					Checklist can handle any type of task.
+				</p>
+			</div>
+			<div class="home-feature">
+				<img src="images/2.png" />
+				<p>
+					Drag and drop your projects into place.
+				</p>
+			</div>
+			<div class="home-feature">
+				<img src="images/3.png" />
+				<p>
+					Organize your team, your project and yourself!
+				</p>
+			</div>
+			<div class="content-spacer"></div>
+
+			<div class="home-signup-form">
+				<p>
+					Start getting Checklisted! 
+				</p>
+								<div class="form">
+					<div>
+						<label for="firstName">First Name</label>
+						<input name="firstName" id="firstName" type="text" placeholder="ex: John">
+					</div>
+					<div>
+						<label for="lastName">Last Name</label>
+						<input name="lastName" id="lastName" type="text" placeholder="ex: Doe">
+					</div>
+					<div>
+						<label for="username">Username</label>
+						<input name="username" id="username" type="text" placeholder="ex: johndoe1234">
+					</div>
+					<div>
+						<label for="email">Email Address</label>
+						<input name="email" id="email" type="email" placeholder="ex: jdoe@domain.com">
+					</div>
+					<div>
+						<label for="password">Password</label>
+						<input name="password" id="password" type="text">
+					</div>
+					<div>
+						<label for="confirmPassword">Confirm Password</label>
+						<input name="confirmPassword" id="confirmPassword" type="text">
+					</div>
+					<div class="content-spacer"></div>
+					<div>
+						<button "sign_up" class="button-submit home-sign-up">
+							Sign Up
+						</button>
+					</div>
+				</div>
+			</div>
+
+		</div>
+					<!--This is the script for the slider-->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+		<script type="text/javascript" src="js/rhinoslider-1.05.min.js"></script>
+		<script type="text/javascript" src="js/mousewheel.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
 	</body>
 	</html>

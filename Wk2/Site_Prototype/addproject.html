@@ -3,9 +3,425 @@
 
 	<head>
 		<title>Checklist Time Management</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
 	</head>
 	
 	<body>
+		<header>
+
+			<div class="header-home">
+				<div class="header-icon"></div>
+				<img src="images/logo_small.png" />
+			</div>
+			<!-- THIS DIV NEEDS TO BE POPULATED WITH THE USERNAME LINK-->
+			<div class="header-login">
+				<span id="header_user">USERNAME HERE</span>
+				<button id="header_logout">Log Out</button>
+			</div>
+
+		</header>
+		
+		<div id="main">
+
+			<br />
+
+			<!-- PROJECTS FOLLOW -->
+
+			<!-- PROJECT CREATE AND EDIT --> 
+			<div class="project-submit-container">
+				<div class="project-submit-heading">
+					<div class="status active"></div>
+					<span class="project-submit-title">Project Name</span>
+					<span class="icon-delete"></span>
+				</div>
+
+				<div class="padding">
+
+					<div class="left">
+
+						<span>Project Name</span>
+						<br />
+						<input type="text" class="project-submit-name" />
+
+						<div class="content-spacer"></div>
+
+						<span>Project Description</span>
+						<br />
+						<textarea class="project-submit-description"></textarea>																																																																															
+
+					</div>
+
+					<div class="right">
+
+						<span>Due Date</span>
+						<br />
+						<input type="text" class="project-submit-date" />
+
+						<div class="content-spacer"></div>
+
+						<span>Status</span>
+						<br />
+						<button class="button-status">
+							<div class="status active"></div>
+							<span>Active</span>
+						</button>
+						<button class="button-status">
+							<div class="status urgent"></div>
+							<span>Urgent</span>
+						</button>
+						<button class="button-status">
+							<div class="status delay"></div>
+							<span>Delay</span>
+						</button>
+						<button class="button-status">
+							<div class="status done"></div>
+							<span>Done</span>
+						</button>
+
+					</div>
+
+					<div class="clear"></div>
+					<button class="submit-save">
+						Save
+					</button>
+					<div class="clear"></div>
+
+				</div>
+
+			</div>
+<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+
+			<!-- PROJECT DETAILS --> 
+			<div class="project-submit-container">
+				<div class="project-submit-heading">
+					<div class="status active"></div>
+					<span class="project-submit-title">Project Name</span>
+					<span class="icon-delete"></span>
+					<span class="icon-edit"></span>
+				</div>
+
+				<div class="padding">
+
+					<div class="left">
+
+						<span>Task Name</span>
+						<br />
+						<span class="project-submit-name">NAME HERE</span>
+
+						<div class="content-spacer"></div>
+
+						<span>Project Description</span>
+						<br />
+						<span class="project-submit-description">DESCRIPTION HERE</span>																																																																															
+
+					</div>
+
+					<div class="right">
+
+						<span>Due Date</span>
+						<br />
+						<span type="text" class="project-submit-date">DUE DATE HERE</span>
+
+						<div class="content-spacer"></div>
+
+						<span>Status</span>
+						<br />
+						<button class="button-status">
+							<div class="status active"></div>
+							<span>Active</span>
+						</button>
+						<button class="button-status">
+							<div class="status urgent"></div>
+							<span>Urgent</span>
+						</button>
+						<button class="button-status">
+							<div class="status delay"></div>
+							<span>Delay</span>
+						</button>
+						<button class="button-status">
+							<div class="status done"></div>
+							<span>Done</span>
+						</button>
+
+					</div>
+
+					<div class="clear"></div>
+
+				</div>
+
+			</div>
+
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+
+			<!-- PROJECT ITEMS --> 
+
+			<div class="project-item">
+				<div class="status active"></div>
+				<span class="project-name">Project Name</span>
+				<span class="icon-delete"></span>
+				<span class="icon-edit"></span>
+			</div>
+
+			<div class="project-item">
+				<div class="status urgent"></div>
+				<span class="project-name">Project Name</span>
+				<span class="icon-delete"></span>
+				<span class="icon-edit"></span>
+			</div>
+
+			<div class="project-item">
+				<div class="status delay"></div>
+				<span class="project-name">Project Name</span>
+				<span class="icon-delete"></span>
+				<span class="icon-edit"></span>
+			</div>
+
+			<div class="project-item">
+				<div class="status done"></div>
+				<span class="project-name">Project Name</span>
+				<span class="icon-delete"></span>
+				<span class="icon-edit"></span>
+			</div>
+
+			<!-- PROJECTS END -->
+
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+
+			<!-- TASKS FOLLOW -->
+
+			<!-- TASK CREATE AND EDIT --> 
+			<div class="center-parent">
+
+				<div class="list-header">
+					<button class="right">
+						Add Task
+					</button>
+					<span class="list-heading">Tasks for Project Name</span>
+				</div>
+
+				<div class="task-submit-container center-child">
+
+					<div class="status active"></div>
+					<div class="task-submit-heading">
+						<span class="task-submit-title">New Task</span>
+						<span class="icon-delete"></span>
+					</div>
+
+					<div class="padding">
+
+						<div class="left">
+
+							<span>Task Name</span>
+							<br />
+							<input type="text" class="task-submit-name" />
+
+							<div class="content-spacer"></div>
+
+							<span>Task Description</span>
+							<br />
+							<textarea class="task-submit-description"></textarea>																																																																																					
+
+						</div>
+
+						<div class="right">
+
+							<span>Due Date</span>
+							<br />
+							<input type="text" class="task-submit-date" />
+
+							<div class="content-spacer"></div>
+
+							<span>Status</span>
+							<br />
+							<button class="button-status">
+								<div class="status active"></div>
+								<span>Active</span>
+							</button>
+							<button class="button-status">
+								<div class="status urgent"></div>
+								<span>Urgent</span>
+							</button>
+							<button class="button-status">
+								<div class="status delay"></div>
+								<span>Delay</span>
+							</button>
+							<button class="button-status">
+								<div class="status done"></div>
+								<span>Done</span>
+							</button>
+
+						</div>
+
+						<div class="clear"></div>
+						<button class="submit-save">
+							Save
+						</button>
+						<div class="clear"></div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+
+			<!-- TASK DETAILS -->
+			<div class="center-parent">
+
+				<div class="list-header">
+					<button class="right">
+						Add Task
+					</button>
+					<span class="list-heading">Tasks for Project Name</span>
+				</div>
+
+				<div class="task-submit-container center-child">
+
+					<div class="status active"></div>
+					<div class="task-submit-heading">
+						<span class="task-submit-title">New Task</span>
+						<span class="icon-delete"></span>
+						<span class="icon-edit"></span>
+					</div>
+
+					<div class="padding">
+
+						<div class="left">
+
+							<span>Task Name</span>
+							<br />
+							<span type="text" class="task-submit-name">TASK NAME</span>
+
+
+							<div class="content-spacer"></div>
+
+							<span>Task Description</span>
+							<br />
+							<span class="task-submit-description">TASK DESCRIPTION</span>																																																																																					
+
+						</div>
+
+						<div class="right">
+
+							<span>Due Date</span>
+							<br />
+							<span type="text" class="task-submit-date">DUE DATE</span>
+
+							<div class="content-spacer"></div>
+
+							<span>Status</span>
+							<br />
+							<button class="button-status">
+								<div class="status active"></div>
+								<span>Active</span>
+							</button>
+							<button class="button-status">
+								<div class="status urgent"></div>
+								<span>Urgent</span>
+							</button>
+							<button class="button-status">
+								<div class="status delay"></div>
+								<span>Delay</span>
+							</button>
+							<button class="button-status">
+								<div class="status done"></div>
+								<span>Done</span>
+							</button>
+
+						</div>
+
+						<div class="clear"></div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+
+			<!-- TASK ITEMS -->
+
+			<div class="task-item">
+				<div class="status active"></div>
+				<span class="task-name">Task Name</span>
+				<span class="icon-delete"></span>
+				<span class="icon-edit"></span>
+			</div>
+
+			<div class="task-item">
+				<div class="status urgent"></div>
+				<span class="task-name">Task Name</span>
+				<span class="icon-delete"></span>
+				<span class="icon-edit"></span>
+			</div>
+
+			<div class="task-item">
+				<div class="status delay"></div>
+				<span class="task-name">Task Name</span>
+				<span class="icon-delete"></span>
+				<span class="icon-edit"></span>
+			</div>
+
+			<div class="task-item">
+				<div class="status done"></div>
+				<span class="task-name">Task Name</span>
+				<span class="icon-delete"></span>
+				<span class="icon-edit"></span>
+			</div>
+
+			<!-- TASKS END -->
+
+		</div>
+
+	
+	
 	</body>
 	</html>

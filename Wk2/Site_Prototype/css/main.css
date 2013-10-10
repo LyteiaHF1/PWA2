@@ -1,0 +1,521 @@
+/** Global styles applied to the entire site */
+
+html, body {
+	background: #111111 url("../images/lined_paper_@2X.png"); 
+	font-family: Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+header {
+	background: #ffcd33;/*#a8ce98; change to #5c90cb*/
+	border-bottom: 1px solid #000;
+	height: 40px;
+	line-height: 40px;
+	width: 100%;
+	box-shadow: 0 0 .4em rgba(0,0,0,.5);
+}
+
+input[type="email"], input[type="number"], input[type="password"], input[type="text"], input[type="search"], textarea {
+	border: 1px solid #777;
+	border-radius: 2px;
+	box-shadow: inset 0 0 .4em rgba(0,0,0,.4);
+}
+
+input[type="email"], input[type="number"], input[type="password"], input[type="text"], input[type="search"] {
+	height: 19px;
+}
+
+textarea {
+	resize: none;
+}
+
+button, input[type=button], .button {
+	border: none;
+	border-radius: 2px;
+	color: #444;
+	cursor: pointer;
+	font-weight: bold;
+	padding: 5px;
+	white-space: nowrap;
+	border: 1px solid #999;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+button:hover, input[type=button]:hover, .button:hover {
+	color: #000;
+}
+
+button:active, input[type=button]:active, .button:active {
+	background: #c8c8c8;
+	box-shadow: inset 0 0 .5em rgba(0,0,0,.4);
+	color: #000;
+}
+
+input[type=submit], .button-submit {
+
+	border-radius: 2px;
+	border: none;
+	color: #444;
+	cursor: pointer;
+	font-weight: bold;
+	padding: 5px;
+	white-space: nowrap;
+}
+
+input[type=submit]:hover, .button-submit:hover {
+	color: #000;
+}
+
+input[type=submit]:active, .button-submit:active {
+	background: #5c90cb;
+	box-shadow: inset 0 0 .5em rgba(0,0,0,.4);
+}
+
+a {
+
+}
+
+a:hover {
+
+}
+
+a:active {
+
+}
+
+/** Site specific ids and classes  */
+
+#main {
+	background: #e6e6e6;
+	border-bottom: 1px solid #000;
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+	width: 960px;
+	text-align: left;
+	margin: 0 auto;
+	padding-bottom: 60px;
+	
+}
+
+#application_create_project {
+	margin-left: 89%;
+}
+
+.cta{
+	font-size: 20px;
+	background: #9ac67f;
+	border-radius: 2px;
+	padding: 15px;
+	white-space: nowrap;
+	text-align: center;
+	width: 250px;
+	height: 20px;
+	position: absolute;
+	margin-top: -25px;
+	margin-left: -140px;
+}
+
+.error-title, .error-login, .error-signup{
+	color: #BF1515;
+}
+
+.error-title{
+	background: none;
+	margin: 20px;
+}
+
+.header-home {
+	float: left;
+	margin-left: 20px;
+}
+
+.header-icon {
+	float: left;
+	height: 40px;
+	width: 132px;
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+.header-login {
+	float: right;
+	margin-right: 20px;
+}
+
+.button-large {
+	font-size: 1em;
+	padding: 10px 50px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#header_account {
+	background: #e6e6e6;
+	width: 305px;
+	height: 275px;
+	position: absolute;
+	top: 45px;
+	right: 5px;
+	display: none;
+	border: 1px solid #999;
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+	text-align: left;
+	padding: 40px;
+}
+
+#header_account input {
+	float: right;
+}
+
+#header_account span {
+	width: 160px;
+	float: right;
+}
+
+#header_account label {
+	font-weight: bold;
+}
+
+#header_account_edit {
+	display: none;
+}
+
+
+/** Home */
+
+.home-hero {
+	background: #5c90cb; 
+	text-align: center;
+}
+
+.home-hero-title {
+	color:  #ffcd33;
+	font-size: 1.2em;
+	margin-top: 10px;
+}
+
+.home-hero-preview {
+	background: url("../images/1.jpg") 50% no-repeat;
+	height: 192px;
+	margin-top: 50px;
+}
+
+.home-sign-up {
+	position: relative;
+	top: -25px;
+}
+
+.home-signup-form .form {
+	margin: -65px 20px 0 400px;
+	background: #ffffff;
+	padding: 10px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	border-radius: 2px;
+}
+
+.home-signup-form .form label {
+	width: 150px;
+	display: inline-block;
+}
+
+.home-signup-form .form input {
+	width: 310px;
+	display: inline-block;
+	padding-left: 5px;
+}
+
+.home-signup-form p {
+	font-size: 1.3em;
+	width: 360px;
+	text-align: center;
+	background:  #5c90cb;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 10px;
+}
+
+.home-signup-form div {
+	margin: 20px 20px;
+}
+
+.home-feature {
+	float: left;
+	width: 300px;
+	padding: 10px;
+	text-align: center;
+	margin-top: 40px;
+}
+
+/* Account Settings Form */
+.acc-settings-form .form {
+	margin: -65px 20px 0 400px;
+	background: #ffffff;
+	padding: 10px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	border-radius: 2px;
+}
+
+.acc-settings-form .form label {
+	width: 150px;
+	display: inline-block;
+}
+
+.acc-settings-form .form input{
+	width: 310px;
+	display: inline-block;
+	padding-left: 5px;
+
+	
+}
+
+.acc-settings-form .form p{
+	font-size: 1.3em;
+	width: 360px;
+	text-align: center;
+	background:  #5c90cb;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 10px;
+}
+	
+}
+
+.acc-settings-form .form div{
+	margin: 20px 20px;
+	
+}
+
+
+
+/** Project */
+
+/* Project Create AND Edit */
+.project-create-container, .project-edit-container, .project-detail-container {
+	background: #f0f0f0;
+	box-shadow: 0 0.2em 0.35em rgba(0, 0, 0, 0.4);
+	text-align: left;
+	margin: 0 auto;
+	width: 95%;
+	line-height: 1.5em;
+}
+
+.project-create-heading, .project-edit-heading, .project-detail-heading {
+	line-height: 50px;
+	width: 100%;
+}
+
+.project-create-title, .project-edit-title, .project-detail-title {
+	font-weight: bold;
+	margin-left: 20px;
+}
+
+.project-create-name, .project-create-description, .project-edit-name, .project-edit-description, .project-detail-name, .project-detail-description {
+	display: block;
+	width: 630px;
+}
+
+.project-create-description, .project-edit-description, .project-detail-description {
+	height: 115px;
+}
+
+.project-create-date, .project-edit-date, .project-detail-date {
+	width: 196px;
+}
+/* End Project Create AND Edit */
+
+.project-item {
+	height: 50px;
+	line-height: 50px;
+	text-align: left;
+	width: 95%;
+	margin: 10px auto;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.project-name {
+	margin-left: 20px;
+}
+
+/** Task */
+/* Task Create AND Edit */
+.task-edit-container, .task-detail-container, .task-create-container {
+	background: #f0f0f0;
+	text-align: left;
+	position: relative;
+	line-height: 1.5em;
+}
+
+.task-create-container {
+	width: 95%;
+	margin: 0 auto;
+	box-shadow: 0 0.2em 0.35em rgba(0, 0, 0, 0.4);
+}
+
+.task-container {
+	text-align: left;
+}
+
+.task-edit-heading, .task-create-heading {
+	
+	line-height: 50px;
+	width: 100%;
+}
+
+.task-edit-title, {
+font-weight: bold;
+margin-left: 20px;
+}
+
+.task-edit-name, .task-edit-description, .task-detail-name, .task-detail-description, .task-create-name, .task-create-description {
+	width: 600px;
+}
+
+.task-edit-description, .task-detail-description, .task-create-description {
+	display: block;
+	height: 115px;
+}
+
+.task-edit-date, .task-create-date {
+	width: 196px;
+}
+/* End Task Create AND Edit */
+
+.task-list-heading {
+	width: 95%;
+	margin: 0 auto;
+}
+
+.task-list-heading button {
+	float: right;
+}
+
+.task-item, task {
+	/*background-color: #ffff;*/
+	line-height: 50px;
+	text-align: left;
+	width: 95%;
+	margin: 10px auto;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	
+}
+
+.task-name {
+	margin-left: 20px;
+}
+
+/** Misc */
+
+.list-header {
+	width: 95%;
+	margin: 0 auto;
+	text-align: left;
+	margin-bottom: 15px;
+}
+
+.list-heading {
+	font-size: 1.25em;
+}
+
+.project-edit-save, .task-edit-save {
+	width: 200px;
+}
+
+.status {
+	height: 5px;
+	width: 100%;
+}
+
+.status.active {
+	background:  #5c90cb;
+}
+
+.status.urgent {
+	background: #EE6545;
+}
+
+.status.delayed {
+	background: #3C731A;
+}
+
+.status.done {
+	background: #444444;
+}
+
+.button-status {
+	border: 1px solid #f0f0f0;
+	display: block;
+	padding: 0;
+	position: relative;
+	height: 30px;
+	width: 200px;
+}
+
+.button-status .status {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.icon-edit {
+	background-image: url("../images/edit-icon.png");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	float: right;
+	height: 50px;
+	width: 28px;
+	margin-right: 10px;
+}
+
+.icon-delete {
+	background-image: url("../images/delete-icon.png");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	float: right;
+	height: 50px;
+	width: 28px;
+	margin-right: 10px;
+}
+
+/** Overrides of specific styles */
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.center-parent {
+	text-align: center;
+}
+
+.center-child {
+	margin: 0 auto;
+}
+
+.padding {
+	padding: 30px;
+}
+
+.clear {
+	clear: both;
+}
+
+.content-spacer {
+	clear: both;
+	height: 30px;
+}
+
+.hidden{
+	display: none;
+}
