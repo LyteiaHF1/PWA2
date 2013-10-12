@@ -3,7 +3,6 @@
 
 	<head>
 		<title>Checklist Time Management</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
 	</head>
 	
@@ -14,9 +13,9 @@
 				<div class="header-icon"></div>
 				<img src="images/logo_small.png" />
 			</div>
-			<!-- THIS DIV NEEDS TO BE POPULATED WITH THE USERNAME LINK-->
+			
 			<div class="header-login">
-				<span id="header_user">USERNAME HERE</span>
+				<span id="header_user">USERNAME</span>
 				<button id="header_logout">Log Out</button>
 			</div>
 
@@ -26,13 +25,11 @@
 
 			<br />
 
-			<!-- PROJECTS FOLLOW -->
-
-			<!-- PROJECT CREATE AND EDIT --> 
-			<div class="project-submit-container">
-				<div class="project-submit-heading">
+			<!--  Create and Edit Project --> 
+			<div class="project_submit_con">
+				<div class="project_submit_heading">
 					<div class="status active"></div>
-					<span class="project-submit-title">Project Name</span>
+					<span class="project_submit_title">Project Name</span>
 					<span class="icon-delete"></span>
 				</div>
 
@@ -42,13 +39,13 @@
 
 						<span>Project Name</span>
 						<br />
-						<input type="text" class="project-submit-name" />
+						<input type="text" class="project_submit_name" />
 
 						<div class="content-spacer"></div>
 
 						<span>Project Description</span>
 						<br />
-						<textarea class="project-submit-description"></textarea>																																																																															
+						<textarea class="project_submit_description"></textarea>																																																																															
 
 					</div>
 
@@ -56,7 +53,7 @@
 
 						<span>Due Date</span>
 						<br />
-						<input type="text" class="project-submit-date" />
+						<input type="text" class="project_submit_date" />
 
 						<div class="content-spacer"></div>
 
@@ -90,20 +87,15 @@
 				</div>
 
 			</div>
-<br />
+			
 			<br />
 			<br />
 			<br />
 			<br />
 			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-
-			<!-- PROJECT DETAILS --> 
-			<div class="project-submit-container">
-				<div class="project-submit-heading">
+			<!-- Project --> 
+			<div class="project_submit_con">
+				<div class="project_submit_heading">
 					<div class="status active"></div>
 					<span class="project-submit-title">Project Name</span>
 					<span class="icon-delete"></span>
@@ -116,21 +108,20 @@
 
 						<span>Task Name</span>
 						<br />
-						<span class="project-submit-name">NAME HERE</span>
+						<span class="project_submit_name">Name</span>
 
 						<div class="content-spacer"></div>
 
 						<span>Project Description</span>
 						<br />
-						<span class="project-submit-description">DESCRIPTION HERE</span>																																																																															
-
+						<span class="project_submit_description">Description</span>																																																					
 					</div>
 
 					<div class="right">
 
 						<span>Due Date</span>
 						<br />
-						<span type="text" class="project-submit-date">DUE DATE HERE</span>
+						<span type="text" class="project-submit-date">Due date</span>
 
 						<div class="content-spacer"></div>
 
@@ -166,58 +157,47 @@
 			<br />
 			<br />
 			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
+			
+			<!-- The items located in projects --> 
 
-			<!-- PROJECT ITEMS --> 
-
-			<div class="project-item">
+			<div class="project_item">
 				<div class="status active"></div>
-				<span class="project-name">Project Name</span>
+				<span class="project_name">Project Name</span>
 				<span class="icon-delete"></span>
 				<span class="icon-edit"></span>
 			</div>
 
-			<div class="project-item">
+			<div class="project_item">
 				<div class="status urgent"></div>
-				<span class="project-name">Project Name</span>
+				<span class="project_name">Project Name</span>
 				<span class="icon-delete"></span>
 				<span class="icon-edit"></span>
 			</div>
 
-			<div class="project-item">
+			<div class="project_item">
 				<div class="status delay"></div>
-				<span class="project-name">Project Name</span>
+				<span class="project_name">Project Name</span>
 				<span class="icon-delete"></span>
 				<span class="icon-edit"></span>
 			</div>
 
-			<div class="project-item">
+			<div class="project_item">
 				<div class="status done"></div>
-				<span class="project-name">Project Name</span>
+				<span class="project_name">Project Name</span>
 				<span class="icon-delete"></span>
 				<span class="icon-edit"></span>
 			</div>
 
-			<!-- PROJECTS END -->
+			<!-- End of Projects -->
 
 			<br />
 			<br />
 			<br />
 			<br />
 			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
+			<!-- Tasks -->
 
-			<!-- TASKS FOLLOW -->
-
-			<!-- TASK CREATE AND EDIT --> 
+			<!-- Create and edit tasks --> 
 			<div class="center-parent">
 
 				<div class="list-header">
@@ -227,11 +207,11 @@
 					<span class="list-heading">Tasks for Project Name</span>
 				</div>
 
-				<div class="task-submit-container center-child">
+				<div class="task_submit_container center-child">
 
 					<div class="status active"></div>
-					<div class="task-submit-heading">
-						<span class="task-submit-title">New Task</span>
+					<div class="task_submit_heading">
+						<span class="task_submit_title">New Task</span>
 						<span class="icon-delete"></span>
 					</div>
 
@@ -241,21 +221,20 @@
 
 							<span>Task Name</span>
 							<br />
-							<input type="text" class="task-submit-name" />
+							<input type="text" class="task_submit_name" />
 
 							<div class="content-spacer"></div>
 
 							<span>Task Description</span>
 							<br />
-							<textarea class="task-submit-description"></textarea>																																																																																					
-
+							<textarea class="task_submit_description"></textarea>																																																																										
 						</div>
 
 						<div class="right">
 
 							<span>Due Date</span>
 							<br />
-							<input type="text" class="task-submit-date" />
+							<input type="text" class="task_submit_date" />
 
 							<div class="content-spacer"></div>
 
@@ -297,13 +276,7 @@
 			<br />
 			<br />
 			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-
-			<!-- TASK DETAILS -->
+			<!-- Task details -->
 			<div class="center-parent">
 
 				<div class="list-header">
@@ -313,11 +286,11 @@
 					<span class="list-heading">Tasks for Project Name</span>
 				</div>
 
-				<div class="task-submit-container center-child">
+				<div class="task_submit_container center-child">
 
 					<div class="status active"></div>
-					<div class="task-submit-heading">
-						<span class="task-submit-title">New Task</span>
+					<div class="task_submit_heading">
+						<span class="task_submit_title">New Task</span>
 						<span class="icon-delete"></span>
 						<span class="icon-edit"></span>
 					</div>
@@ -328,14 +301,14 @@
 
 							<span>Task Name</span>
 							<br />
-							<span type="text" class="task-submit-name">TASK NAME</span>
+							<span type="text" class="task_submit_name">Task Name</span>
 
 
 							<div class="content-spacer"></div>
 
 							<span>Task Description</span>
 							<br />
-							<span class="task-submit-description">TASK DESCRIPTION</span>																																																																																					
+							<span class="task_submit_description">Task Description</span>																																																																																					
 
 						</div>
 
@@ -343,7 +316,7 @@
 
 							<span>Due Date</span>
 							<br />
-							<span type="text" class="task-submit-date">DUE DATE</span>
+							<span type="text" class="task-submit-date">Due date</span>
 
 							<div class="content-spacer"></div>
 
@@ -381,47 +354,37 @@
 			<br />
 			<br />
 			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
+			
+			<!-- Task Items -->
 
-			<!-- TASK ITEMS -->
-
-			<div class="task-item">
+			<div class="task_item">
 				<div class="status active"></div>
-				<span class="task-name">Task Name</span>
+				<span class="task_name">Task Name</span>
 				<span class="icon-delete"></span>
 				<span class="icon-edit"></span>
 			</div>
 
-			<div class="task-item">
+			<div class="task_item">
 				<div class="status urgent"></div>
-				<span class="task-name">Task Name</span>
+				<span class="task_name">Task Name</span>
 				<span class="icon-delete"></span>
 				<span class="icon-edit"></span>
 			</div>
 
-			<div class="task-item">
+			<div class="task_item">
 				<div class="status delay"></div>
-				<span class="task-name">Task Name</span>
+				<span class="task_name">Task Name</span>
 				<span class="icon-delete"></span>
 				<span class="icon-edit"></span>
 			</div>
 
-			<div class="task-item">
+			<div class="task_item">
 				<div class="status done"></div>
-				<span class="task-name">Task Name</span>
+				<span class="task_name">Task Name</span>
 				<span class="icon-delete"></span>
 				<span class="icon-edit"></span>
 			</div>
-
-			<!-- TASKS END -->
-
+			<!-- End of Tasks -->
 		</div>
-
-	
-	
 	</body>
 	</html>
