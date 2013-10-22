@@ -565,7 +565,7 @@ Slider Will Be Added Using Css
 						if (response.project) {
 							loadProjectDetails(projectID);
 						} else {
-							//show and error
+							
 						}
 	
 					}

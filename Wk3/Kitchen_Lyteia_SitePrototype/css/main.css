@@ -4,7 +4,7 @@ Styles for entire site */
 
 html, body {
 	background: #111111 url("../images/lined_paper_@2X.png"); 
-	font-family: Helvetica, sans-serif;
+	font-family: "Helvetica Neue", sans-serif;
 	margin: 0;
 	padding: 0;
 	text-align: center;
@@ -36,7 +36,7 @@ textarea {
 button, input[type=button], .button {
 	border: none;
 	border-radius: 2px;
-	color: #444;
+	background: #5c90cb;
 	cursor: pointer;
 	font-weight: bold;
 	padding: 5px;
@@ -51,7 +51,7 @@ button:hover, input[type=button]:hover, .button:hover {
 }
 
 button:active, input[type=button]:active, .button:active {
-	background: #5c90cb;
+	/*background: #5c90cb;*/
 	box-shadow: inset 0 0 .5em rgba(0,0,0,.4);
 	color: #000;
 }
@@ -60,7 +60,7 @@ input[type=submit], .button-submit {
 
 	border-radius: 2px;
 	border: none;
-	color: #444;
+	background: #5c90cb;
 	cursor: pointer;
 	font-weight: bold;
 	padding: 5px;
@@ -122,34 +122,37 @@ a:active {
 	margin-left: 20px;
 }
 
-.header-icon {
-	float: left;
-	height: 40px;
-	width: 132px;
-	position:absolute;
-	left:0;
-	top:0;
-}
+
 
 .header-login {
 	float: right;
 	margin-right: 20px;
 }
 
+#header_user {
+	cursor: pointer;/*added so user knows they can click on it*/
+}
+
+
 
 
 #header_account {
-	background: #e6e6e6;
+	background: #ffe080;/*Same Yellow used for tasks background*/
+	/*color:  #ffcd33; keeping text black*/
+	opacity:0.9;
 	width: 305px;
-	height: 275px;
+	height: 200px;
 	position: absolute;
 	top: 45px;
 	right: 5px;
 	display: none;
-	border: 1px solid #999;
-	box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+	border: 1px solid  #F0F8FF;/*This is the only time this blue will be used*/
+	/*box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);*/
 	text-align: left;
 	padding: 40px;
+	background-image: url("../images/dropdown.png");
+	background-repeat: no-repeat;
+	background-position:bottom right;
 }
 
 #header_account input {
@@ -162,7 +165,7 @@ a:active {
 }
 
 #header_account label {
-	font-weight: bold;
+	font-weight: light;
 }
 
 #header_account_edit {
@@ -228,16 +231,9 @@ a:active {
 }
 
 
-/*Home Page Slider*/
-.home_preview {
-	background-image: url(".../images/")
-}
+/*Home Page Slider
 
-
-
-
-
-#slider{
+.home_preview #slider{
         display:block;
         width:1110px;
         height:100%;
@@ -326,10 +322,10 @@ a:active {
         48.6%{background-position: -5550px top;}
         50.2%{background-position: -6660px top;}
         56.9%{background-position: -6660px top;}
-    58.5%{background-position: -7770px top;}
-    65.2%{background-position: -7770px top;}
-    66.8%{background-position: -8880px top;}
-    73.5%{background-position: -8880px top;}
+        58.5%{background-position: -7770px top;}
+        65.2%{background-position: -7770px top;}
+        66.8%{background-position: -8880px top;}
+        73.5%{background-position: -8880px top;}
         75.1%{background-position: -9990px top;}
         81.8%{background-position: -9990px top;}
         83.4%{background-position: -11100px top;}
@@ -339,7 +335,7 @@ a:active {
         100%{background-position: -13320px top;}
         101.6%{background-position: -13320px top;}
 }
-
+*/
 
 .feature_ {
 	float: left;
